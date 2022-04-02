@@ -18,23 +18,22 @@ buttons.forEach(btn=> {
         buttons.forEach(btn => {
         btn.classList.remove("active")
         });
+        
+        text.forEach(text =>{
+            text.classList.add("hidden")
+        })
+
 
         if(btnData == "history"){
-            vision.classList.add("hidden");
-            goals.classList.add("hidden");
             history.classList.remove("hidden");
             btn.classList.add("active");
             
         }else if(btnData == "vision"){
-            history.classList.add("hidden");
-            goals.classList.add("hidden");
             vision.classList.remove("hidden");
             btn.classList.add("active");
 
         }else if(btnData == "goals"){
             goals.classList.remove("hidden");
-            history.classList.add("hidden");
-            vision.classList.add("hidden");
             btn.classList.add("active");
         }
     })
